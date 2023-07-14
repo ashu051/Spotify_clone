@@ -102,3 +102,39 @@ CREATE TABLE Subscription (
   SubscriptionDetails VARCHAR(255)
 );
 
+INSERT INTO Artist (id, ArtistName, ArtistBio)
+VALUES (1, 'John Smith', 'A talented musician'),
+       (2, 'Emma Johnson', 'A versatile singer');
+INSERT INTO Albums (id, AlbumName)
+VALUES (1, 'Greatest Hits'),
+       (2, 'Love Songs');
+INSERT INTO Songs (id, SongName, SongDuration, SongGenre, Album_id)
+VALUES (1, 'Song 1', '00:03:45', 'Pop', 1),
+       (2, 'Song 2', '00:04:10', 'Rock', 2),
+       (3, 'Song 3', '00:05:20', 'R&B', 1);
+INSERT INTO Artist_Albums (artist_id, album_id)
+VALUES (1, 1),
+       (1, 2),
+       (2, 1);
+ INSERT INTO Podcast (id, PodcastName, PodcastDuration)
+VALUES (1, 'Tech Talk', '00:30:00'),
+       (2, 'Business Insights', '00:45:00');
+	   INSERT INTO Podcast (id, PodcastName, PodcastDuration)
+VALUES (1, 'Tech Talk', '00:30:00'),
+       (2, 'Business Insights', '00:45:00');
+INSERT INTO Artist_Podcast (artist_id, podcast_id)
+VALUES (1, 1),
+       (1, 2),
+       (2, 2);
+
+INSERT INTO Playlist (id, PlaylistName)
+VALUES (1, 'Favorites'),
+       (2, 'Party Mix');
+INSERT INTO Artist_Songs (artist_id, song_id)
+VALUES (1, 1),
+       (1, 2),
+       (2, 3);
+
+
+
+
