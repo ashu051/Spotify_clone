@@ -89,3 +89,16 @@ CREATE TABLE Artist_Podcast (
   FOREIGN KEY (podcast_id) REFERENCES Podcast(id),
   FOREIGN KEY (artist_id) REFERENCES Artist(id)
 );
+CREATE TABLE User_Like_Songs (
+  user_id INT,
+  song_id INT,
+  FOREIGN KEY (user_id) REFERENCES users(User_id),
+  FOREIGN KEY (song_id) REFERENCES Songs(id)
+);
+
+CREATE TABLE Subscription (
+  SubscriptionType VARCHAR(255),
+  Cost BIGINT,
+  SubscriptionDetails VARCHAR(255)
+);
+
